@@ -7,4 +7,8 @@
   target: https://www.sboulder.com/arkose/sevres/profile/uEJahBFrrw6k7wZmn/
   kind: url
   children: []
+- title: Journal de bord
+  target: "/actualites/journal-de-bord/"
+  kind: category
+  children: []
 
