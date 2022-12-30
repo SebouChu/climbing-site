@@ -1,2 +1,6 @@
---- []
+---
+- title: Accueil
+  target: "/"
+  kind: page
+  children: []
 
