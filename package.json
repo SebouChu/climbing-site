@@ -1,0 +1,26 @@
+{
+  "name": "osuny-hugo-template",
+  "version": "1.0.1",
+  "repository": "https://github.com/noesya/osuny-hugo-template",
+  "author": "noesya",
+  "license": "MIT",
+  "dependencies": {
+    "osuny-hugo-theme": "./themes/osuny-hugo-theme-aaa"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "cssnano": "^5.0.15",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0",
+    "postcss-sass": "^0.5.0"
+  },
+  "scripts": {
+    "dev": "hugo server",
+    "build": "hugo --minify",
+    "update": "git pull --recurse-submodules --depth 1 && git submodule update --remote",
+    "setup-example": "git submodule add https://github.com/noesya/osuny-example",
+    "server-example": "hugo server --config 'osuny-example/config/example/config.yaml'",
+    "example": "yarn setup-example > /dev/null || yarn update && yarn server-example",
+    "update-theme": "cd themes/osuny-hugo-theme && git checkout main && git pull && cd ../.. && yarn upgrade"
+  }
+}
