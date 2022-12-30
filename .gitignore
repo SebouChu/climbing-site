@@ -6,3 +6,5 @@ node_modules
 /resources
 /_tmp
 jsconfig.json
+/ssh_deployment_key
+/ssh_deployment_key.pub
