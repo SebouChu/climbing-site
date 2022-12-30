@@ -1,2 +1,6 @@
---- []
+---
+- title: Mentions légales
+  target: "/mentions-legales/"
+  kind: page
+  children: []
 
