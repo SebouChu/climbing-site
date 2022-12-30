@@ -1,5 +1,5 @@
 theme: osuny-hugo-theme-aaa
 params:
   logo:
-    header: "/assets/images/logo.jpg"
-    footer: "/assets/images/logo.jpg"
+    header: "/assets/images/logo.png"
+    footer: "/assets/images/logo.png"
