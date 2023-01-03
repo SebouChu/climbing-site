@@ -1,0 +1,44 @@
+{{ define "main" }}
+  {{ partial "posts/hero-single.html" . }}
+
+  <div class="document-content" itemscope itemtype="https://schema.org/NewsArticle">
+    <meta itemprop="headline" content="{{ partial "PrepareHTML" .Title }}">
+    <meta itemprop="url" content="{{ .Permalink }}">
+    {{ if .Date }}<meta itemprop="datePublished" content="{{ .Date.Format "2006-01-02T15:04" }}">{{ end }}
+    {{ if .Params.description_short }}<meta itemprop="abstract" content="{{ partial "PrepareHTML" .Params.description_short }}">{{ end }}
+    {{ if .Summary }}<meta itemprop="description" content="{{ partial "PrepareHTML" .Summary }}">{{ end }}
+
+    {{ partial "posts/sidebar.html" . }}
+
+    {{ partial "posts/chapo.html" (dict
+        "context" .
+        "block_wrapped" true
+      ) }}
+
+    {{ partial "blocks/list.html" . }}
+
+    <div class="block block-comments">
+      <div class="container">
+        <div class="block-content">
+          <div id="cusdis_thread"
+                data-host="https://cusdis.climbing.sebastiengaya.fr"
+                data-app-id="6d356be8-8a6e-49a6-b946-ff52d8fba488"
+                data-page-id="{{ .Slug }}"
+                data-page-url="{{ .Permalink }}"
+                data-page-title="{{ .Title }}"></div>
+          <script async defer src="https://cusdis.climbing.sebastiengaya.fr/js/cusdis.es.js"></script>
+        </div>
+      </div>
+    </div>
+
+    <div class="block block-pagination">
+      <div class="container">
+        <div class="block-content">
+          {{ partial "posts/prevnext.html" . }}
+        </div>
+      </div>
+    </div>
+
+    {{ partial "hooks/before-document-content-end.html" . }}
+  </div>
+{{ end }}
