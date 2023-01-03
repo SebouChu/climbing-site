@@ -20,12 +20,16 @@
     <div class="block block-comments">
       <div class="container">
         <div class="block-content">
+          <div class="top">
+            <h2>Commentaires</h2>
+          </div>
           <div id="cusdis_thread"
                 data-host="https://cusdis.climbing.sebastiengaya.fr"
                 data-app-id="6d356be8-8a6e-49a6-b946-ff52d8fba488"
                 data-page-id="{{ .Slug }}"
                 data-page-url="{{ .Permalink }}"
                 data-page-title="{{ .Title }}"></div>
+          <script defer src="https://cusdis.com/js/widget/lang/fr.js"></script>
           <script async defer src="https://cusdis.climbing.sebastiengaya.fr/js/cusdis.es.js"></script>
         </div>
       </div>
