@@ -8,9 +8,9 @@ items:
 - title: Journal de bord
   target: "/actualites/journal-de-bord/"
   kind: category
-  children: []
-- title: Toutes les séances
-  target: "/actualites/journal-de-bord/"
-  kind: category
-  children: []
+  children:
+  - title: Toutes les séances
+    target: "/actualites/journal-de-bord/"
+    kind: category
+    children: []
 
