@@ -13,4 +13,8 @@ items:
     target: "/actualites/journal-de-bord/"
     kind: category
     children: []
+  - title: Arkose Pont de Sèvres
+    target: "/actualites/arkose/arkose-pont-de-sevres/"
+    kind: category
+    children: []
 
