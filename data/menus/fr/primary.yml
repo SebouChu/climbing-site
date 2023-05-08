@@ -9,4 +9,8 @@ items:
   target: "/actualites/journal-de-bord/"
   kind: category
   children: []
+- title: Toutes les séances
+  target: "/actualites/journal-de-bord/"
+  kind: category
+  children: []
 
