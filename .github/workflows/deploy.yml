@@ -1,47 +1,40 @@
-name: SSH Deployment
+name: Déploiement Garage
 
 on:
   push:
-    branches:
-      - main  # Set a branch to deploy
+    branches: [ "main" ]
+
 jobs:
-  deploy:
-    runs-on: ubuntu-20.04
-    concurrency:
-      group: ${{ github.workflow }}
-      cancel-in-progress: true
+  build_and_deploy:
+    name: Compilation du site Hugo et déploiement Deux fleurs
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-        with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 1    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: 'latest'
-          extended: true
+    - name: Récupération des données
+      uses: actions/checkout@v3
+      with:
+        submodules: true
 
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-          cache: 'yarn'
+    - name: Installation de Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+        cache: 'yarn'
 
-      - name: Install JS dependencies
-        run: yarn install --frozen-lockfile
+    - name: Installation des dépendances JavaScript
+      run: yarn install --frozen-lockfile
 
-      - name: Build
-        run: hugo -e production --minify
+    - name: Installation de Hugo
+      uses: peaceiris/actions-hugo@v2.6.0
+      with:
+        hugo-version: 'latest'
+        extended: true
 
-      - name: Install SSH Key
-        uses: shimataro/ssh-key-action@v2
-        with:
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          known_hosts: 'just-a-placeholder-so-we-dont-get-errors'
+    - name: Compilation du site
+      run: hugo -e production --minify
 
-      - name: Adding Known Hosts
-        run: ssh-keyscan -p ${{ secrets.SSH_PORT }} -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
-
-      - name: Deploy with rsync
-        run: rsync -avz --delete -e "ssh -p ${{ secrets.SSH_PORT }}" ./public/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_WORKDIR }}/
+    - name: Déploiement Garage
+      run: hugo deploy --force --maxDeletes -1
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

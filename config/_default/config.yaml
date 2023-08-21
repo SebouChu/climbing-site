@@ -3,3 +3,7 @@ params:
   logo:
     header: "/assets/images/logo.png"
     footer: "/assets/images/logo.png"
+deployment:
+  targets:
+    - name: "production"
+      URL: "s3://37737fb095f4072b5da5adbee8b87a1dc2580a6c3fcd0eb18148ffdaf0668302?endpoint=garage.deuxfleurs.fr&s3ForcePathStyle=true&region=garage"
