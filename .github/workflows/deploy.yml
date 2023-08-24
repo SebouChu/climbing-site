@@ -1,4 +1,4 @@
-name: Déploiement Garage
+name: deuxfleurs
 
 on:
   push:
