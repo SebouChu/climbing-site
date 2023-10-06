@@ -3,6 +3,10 @@ params:
   logo:
     header: "/assets/images/logo.png"
     footer: "/assets/images/logo.png"
+  search:
+    active: false
+  summary:
+    position: hero
 deployment:
   targets:
     - name: "production"

@@ -8,3 +8,5 @@ node_modules
 jsconfig.json
 /ssh_deployment_key
 /ssh_deployment_key.pub
+yarn-error.log
+/static/pagefind
