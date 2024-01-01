@@ -1,6 +1,6 @@
 {
   "name": "osuny-hugo-template",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "repository": "https://github.com/noesya/osuny-hugo-template-aaa",
   "author": "noesya",
   "license": "MIT",
@@ -8,13 +8,6 @@
     "osuny-hugo-theme-aaa": "./themes/osuny-hugo-theme-aaa"
   },
   "scripts": {
-    "watch": "npx osuny-hugo-theme watch",
-    "build": "npx osuny-hugo-theme build",
-    "dev": "npx osuny-hugo-theme dev",
-    "update": "npx osuny-hugo-theme update",
-    "setup-example": "npx osuny-hugo-theme setup-example",
-    "server-example": "npx osuny-hugo-theme server-example",
-    "example": "npx osuny-hugo-theme example",
-    "update-theme": "npx osuny-hugo-theme update-theme"
+    "osuny": "npx osuny-hugo-theme"
   }
 }
