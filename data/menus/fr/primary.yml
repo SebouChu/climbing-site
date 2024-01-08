@@ -13,20 +13,20 @@ items:
     target: "/actualites/journal-de-bord/"
     kind: category
     children: []
-  - title: Arkose Pont de Sèvres
-    target: "/actualites/arkose/arkose-pont-de-sevres/"
-    kind: category
-    children: []
-  - title: Arkose Strasbourg-St-Denis
-    target: "/actualites/arkose/arkose-strasbourg-saint-denis/"
-    kind: category
-    children: []
   - title: Arkose Bordeaux
     target: "/actualites/arkose/arkose-bordeaux/"
     kind: category
     children: []
   - title: Arkose Montmartre
     target: "/actualites/arkose/arkose-montmartre/"
+    kind: category
+    children: []
+  - title: Arkose Pont de Sèvres
+    target: "/actualites/arkose/arkose-pont-de-sevres/"
+    kind: category
+    children: []
+  - title: Arkose Strasbourg-St-Denis
+    target: "/actualites/arkose/arkose-strasbourg-saint-denis/"
     kind: category
     children: []
 
