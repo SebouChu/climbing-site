@@ -1,7 +1,7 @@
 {{- with (or site.Data.content_security_policy.allowed_domains site.Data.website.external_domains) -}}
 <meta http-equiv="Content-Security-Policy"
       content="
-        default-src 'self' {{ delimit . " " }} https://cusdis.com https://cusdis.climbing.sebastiengaya.fr
+        default-src 'self' {{ delimit . " " }} cusdis.com cusdis.climbing.sebastiengaya.fr
         {{ if or (not hugo.IsProduction) site.Params.debug }}'unsafe-inline'{{ end }}
         {{ if site.Params.search.active }}'wasm-unsafe-eval'{{ end }};
       " />
