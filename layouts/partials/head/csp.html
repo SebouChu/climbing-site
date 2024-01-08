@@ -4,5 +4,6 @@
         default-src 'self' {{ delimit . " " }} cusdis.com cusdis.climbing.sebastiengaya.fr
         {{ if or (not hugo.IsProduction) site.Params.debug }}'unsafe-inline'{{ end }}
         {{ if site.Params.search.active }}'wasm-unsafe-eval'{{ end }};
+        style-src 'unsafe-inline';
       " />
 {{- end -}}
