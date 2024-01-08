@@ -21,4 +21,8 @@ items:
     target: "/actualites/arkose/arkose-strasbourg-saint-denis/"
     kind: category
     children: []
+  - title: Arkose Bordeaux
+    target: "/actualites/arkose/arkose-bordeaux/"
+    kind: category
+    children: []
 
