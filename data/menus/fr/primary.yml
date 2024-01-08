@@ -17,8 +17,8 @@ items:
     target: "/actualites/arkose/arkose-pont-de-sevres/"
     kind: category
     children: []
-  - title: Fontainebleau
-    target: "/actualites/fontainebleau/"
+  - title: Arkose Strasbourg-St-Denis
+    target: "/actualites/arkose/arkose-strasbourg-saint-denis/"
     kind: category
     children: []
 
