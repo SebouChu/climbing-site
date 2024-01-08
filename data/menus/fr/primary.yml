@@ -25,4 +25,8 @@ items:
     target: "/actualites/arkose/arkose-bordeaux/"
     kind: category
     children: []
+  - title: Arkose Montmartre
+    target: "/actualites/arkose/arkose-montmartre/"
+    kind: category
+    children: []
 
