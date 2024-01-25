@@ -39,7 +39,7 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{ secrets.DEUXFLEURS_ACCESS_KEY }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.DEUXFLEURS_SECRET }}
 
-    - name: Notify Slack Action
+    - name: Notification Slack en cas d'échecs
       uses: ravsamhq/notify-slack-action@2.3.0
       if: always()
       with:
