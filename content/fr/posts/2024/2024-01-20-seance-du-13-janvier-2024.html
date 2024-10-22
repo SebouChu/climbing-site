@@ -56,15 +56,23 @@ contents_reading_time:
   text: >-
     moins d'une minute
 contents:
-  - kind: heading
+  - kind: block
+    template: title
     title: >-
       Résumé
-    slug: "resume"
-    position: 1
-    rank: 2
+    slug: >-
+      resume
+    ranks:
+      self: 2
+    data:
+      layout: classic
+
+
   - kind: block
     template: chapter
     title: >-
+      
+    slug: >-
       
     ranks:
       self: false
@@ -89,6 +97,8 @@ contents:
     template: video
     title: >-
       Essai bloc noir
+    slug: >-
+      essai-bloc-noir
     ranks:
       self: 3
     data:
@@ -119,7 +129,6 @@ contents:
           https://www.youtube.com/embed/pvdJ4fQgt18?autoplay=1&amp;modestbranding=1&amp;rel=0
         iframe: >-
           <iframe class="youtube" loading="lazy" src="https://www.youtube.com/embed/pvdJ4fQgt18" title="240113 - Essai bloc noir Pont de Neuilly"></iframe>
-
 
 
 
