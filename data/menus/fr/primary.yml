@@ -5,6 +5,7 @@ items:
   target: "/"
   kind: page
   children: []
+  file: content/fr/_index.html
 - title: Journal de bord
   target: "/actualites/journal-de-bord/"
   kind: category
@@ -13,20 +14,26 @@ items:
     target: "/actualites/journal-de-bord/"
     kind: category
     children: []
+    file: content/fr/posts_categories/journal-de-bord/_index.html
   - title: Arkose Bordeaux
     target: "/actualites/arkose/arkose-bordeaux/"
     kind: category
     children: []
+    file: content/fr/posts_categories/arkose-arkose-bordeaux/_index.html
   - title: Arkose Montmartre
     target: "/actualites/arkose/arkose-montmartre/"
     kind: category
     children: []
+    file: content/fr/posts_categories/arkose-arkose-montmartre/_index.html
   - title: Arkose Pont de Sèvres
     target: "/actualites/arkose/arkose-pont-de-sevres/"
     kind: category
     children: []
+    file: content/fr/posts_categories/arkose-arkose-pont-de-sevres/_index.html
   - title: Arkose Strasbourg-St-Denis
     target: "/actualites/arkose/arkose-strasbourg-saint-denis/"
     kind: category
     children: []
+    file: content/fr/posts_categories/arkose-arkose-strasbourg-saint-denis/_index.html
+  file: content/fr/posts_categories/journal-de-bord/_index.html
 
