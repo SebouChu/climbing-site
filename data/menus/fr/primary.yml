@@ -4,40 +4,47 @@ items:
 - title: Accueil
   target: "/"
   kind: page
+  new_tab: false
   children: []
   path: "/"
   file: content/fr/_index.html
 - title: Journal de bord
   target: "/actualites/journal-de-bord/"
   kind: category
+  new_tab: false
   children:
   - title: Toutes les séances
     target: "/actualites/journal-de-bord/"
     kind: category
+    new_tab: false
     children: []
     path: "/posts_categories/journal-de-bord"
     file: content/fr/posts_categories/journal-de-bord/_index.html
   - title: Arkose Bordeaux
     target: "/actualites/arkose/arkose-bordeaux/"
     kind: category
+    new_tab: false
     children: []
     path: "/posts_categories/arkose/arkose-bordeaux"
     file: content/fr/posts_categories/arkose/arkose-bordeaux/_index.html
   - title: Arkose Montmartre
     target: "/actualites/arkose/arkose-montmartre/"
     kind: category
+    new_tab: false
     children: []
     path: "/posts_categories/arkose/arkose-montmartre"
     file: content/fr/posts_categories/arkose/arkose-montmartre/_index.html
   - title: Arkose Pont de Sèvres
     target: "/actualites/arkose/arkose-pont-de-sevres/"
     kind: category
+    new_tab: false
     children: []
     path: "/posts_categories/arkose/arkose-pont-de-sevres"
     file: content/fr/posts_categories/arkose/arkose-pont-de-sevres/_index.html
   - title: Arkose Strasbourg-St-Denis
     target: "/actualites/arkose/arkose-strasbourg-saint-denis/"
     kind: category
+    new_tab: false
     children: []
     path: "/posts_categories/arkose/arkose-strasbourg-saint-denis"
     file: content/fr/posts_categories/arkose/arkose-strasbourg-saint-denis/_index.html
