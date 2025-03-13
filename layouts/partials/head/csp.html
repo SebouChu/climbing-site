@@ -5,5 +5,6 @@
         {{ if or (not hugo.IsProduction) site.Params.debug }}'unsafe-inline'{{ end }}
         {{ if site.Params.search.active }}'wasm-unsafe-eval'{{ end }};
         style-src 'self' 'unsafe-inline';
+        frame-ancestors 'self' https:;
       " />
 {{- end -}}
