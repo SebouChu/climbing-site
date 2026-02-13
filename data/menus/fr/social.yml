@@ -2,18 +2,24 @@
 title: Social
 items:
 - title: SocialBoulder
+  slug: socialboulder
   target: https://www.sboulder.com/arkose/sevres/profile/uEJahBFrrw6k7wZmn
   kind: url
   new_tab: true
   children: []
+  descendants_targets: []
 - title: Instagram (principal)
+  slug: instagram-principal
   target: https://www.instagram.com/sebouchu/
   kind: url
   new_tab: true
   children: []
+  descendants_targets: []
 - title: Instagram (escalade)
+  slug: instagram-escalade
   target: https://www.instagram.com/sebou_climbing/
   kind: url
   new_tab: true
   children: []
+  descendants_targets: []
 

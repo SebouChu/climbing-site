@@ -2,52 +2,71 @@
 title: Menu principal
 items:
 - title: Accueil
+  slug: accueil
   target: "/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/"
   file: content/fr/_index.html
 - title: Journal de bord
+  slug: journal-de-bord
   target: "/actualites/journal-de-bord/"
   kind: category
   new_tab: false
   children:
   - title: Toutes les séances
+    slug: toutes-les-seances
     target: "/actualites/journal-de-bord/"
     kind: category
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/posts_categories/journal-de-bord"
     file: content/fr/posts_categories/journal-de-bord/_index.html
   - title: Arkose Montmartre
+    slug: arkose-montmartre
     target: "/actualites/arkose/arkose-montmartre/"
     kind: category
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/posts_categories/arkose/arkose-montmartre"
     file: content/fr/posts_categories/arkose/arkose-montmartre/_index.html
   - title: Arkose Bordeaux
+    slug: arkose-bordeaux
     target: "/actualites/arkose/arkose-bordeaux/"
     kind: category
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/posts_categories/arkose/arkose-bordeaux"
     file: content/fr/posts_categories/arkose/arkose-bordeaux/_index.html
   - title: Arkose Pont de Sèvres
+    slug: arkose-pont-de-sevres
     target: "/actualites/arkose/arkose-pont-de-sevres/"
     kind: category
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/posts_categories/arkose/arkose-pont-de-sevres"
     file: content/fr/posts_categories/arkose/arkose-pont-de-sevres/_index.html
   - title: Arkose Strasbourg-St-Denis
+    slug: arkose-strasbourg-st-denis
     target: "/actualites/arkose/arkose-strasbourg-saint-denis/"
     kind: category
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/posts_categories/arkose/arkose-strasbourg-saint-denis"
     file: content/fr/posts_categories/arkose/arkose-strasbourg-saint-denis/_index.html
+  descendants_targets:
+  - "/actualites/arkose/arkose-bordeaux/"
+  - "/actualites/arkose/arkose-montmartre/"
+  - "/actualites/arkose/arkose-pont-de-sevres/"
+  - "/actualites/arkose/arkose-strasbourg-saint-denis/"
+  - "/actualites/journal-de-bord/"
   path: "/posts_categories/journal-de-bord"
   file: content/fr/posts_categories/journal-de-bord/_index.html
 
